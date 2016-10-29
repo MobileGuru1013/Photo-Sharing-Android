@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+    android:orientation="vertical" >
+ <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/banner_adview"
+        />
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+    </ListView>
+ <ProgressBar
+        android:id="@+id/barUploadPostIndicator"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"/>
+ <LinearLayout 
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+         android:background="@color/btnFacebbolkLoginForeground"
+     android:orientation="vertical">
+<ImageView 
+    android:id="@+id/img_postImage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_post"
+    android:layout_gravity="center"/>
+</LinearLayout>
+</LinearLayout>

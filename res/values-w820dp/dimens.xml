@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">30dp</dimen>
+    <dimen name="activity_vertical_margin">30dp</dimen>
+    
+    <dimen name="layutMarginFirst">10dp</dimen>
+    <dimen name="layutMarginSecond">20dp</dimen>
+    <dimen name="marginTenDP">24dp</dimen>
+<dimen name="marginFiveDP">10dp</dimen>
+<dimen name="widthBrowseUserPic">200dp</dimen>
+<dimen name="widthCameraIcon">150dp</dimen>
+<dimen name="marginBottomLogin">70dp</dimen>
+<dimen name="marginTopLogin">60dp</dimen>
+<dimen name="widthFriendIcon">65dp</dimen>
+<dimen name="widthUserLayout">180dp</dimen>
+</resources>

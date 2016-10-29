@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <include android:id="@+id/ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/banner_adview" />
+
+    <LinearLayout
+        android:id="@+id/LayoutFormHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/marginTopLogin"
+        android:layout_marginLeft="@dimen/marginTenDP"
+        android:layout_marginRight="@dimen/marginTenDP"
+        android:orientation="vertical"
+        android:padding="@dimen/marginTenDP" >
+
+        <Button
+            android:id="@+id/btnFBLogin"
+            style="@style/btnFacebookLoginStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layutMarginFirst"
+            android:text="@string/btnFBLogin" />
+
+        <Button
+            android:id="@+id/btnSignIn"
+            style="@style/btnLoginStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layutMarginFirst"
+            android:text="@string/btnSignUp" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            style="@style/btnLoginStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layutMarginFirst"
+            android:text="@string/btnLogin" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/LayoutFormHolder"
+        android:layout_below="@id/ad"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo" />
+
+</RelativeLayout>

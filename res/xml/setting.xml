@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Security Settings" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="isSendData"
+            android:summary="Send your location data"
+            android:title="Send Location" >
+        </CheckBoxPreference>
+
+        <ListPreference
+            android:entries="@array/updateFrequencyEntry"
+            android:entryValues="@array/updateFrequencyValue"
+            android:key="@string/sendLocationFrequency"
+            android:summary="Set Update Reminder Frequency"
+            android:title="Frequency for Data Sending"
+            android:defaultValue="5"
+            />
+    </PreferenceCategory>
+
+</PreferenceScreen>

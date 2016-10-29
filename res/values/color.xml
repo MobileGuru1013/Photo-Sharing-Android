@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="btnFacebookLoginBackground">#0A405F</color>
+    <color name="btnLoginForeground">#80FFFFFF</color>
+    <color name="btnLoginBackground">#80FFFFFF</color>
+    <color name="btnFacebbolkLoginForeground">#35658D</color>
+    <color name="actionBarBackground">#012840</color>
+
+</resources>

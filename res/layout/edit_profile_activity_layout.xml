@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/banner_adview" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/marginTenDP" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/marginTenDP" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <com.parse.ParseImageView
+                    android:id="@+id/imgMainUserPic"
+                    android:layout_width="@dimen/widthCameraIcon"
+                    android:layout_height="@dimen/widthCameraIcon"
+                    android:src="@drawable/ic_default" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/edtEditName"
+                    style="@style/edtTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layutMarginFirst"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_drw_name"
+                    android:drawablePadding="@dimen/marginFiveDP"
+                    android:ems="10"
+                    android:hint="name" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/edtEditUserName"
+                    style="@style/edtTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layutMarginFirst"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_drw_user"
+                    android:drawablePadding="@dimen/marginFiveDP"
+                    android:ems="10"
+                    android:hint="Username" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/edtEditEmail"
+                    style="@style/edtTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layutMarginFirst"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_drw_email"
+                    android:drawablePadding="@dimen/marginFiveDP"
+                    android:ems="10"
+                    android:hint="Email" >
+                </EditText>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btnEditSubmit"
+                        style="@style/btnFacebookLoginStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layutMarginFirst"
+                        android:layout_weight="1"
+                        android:text="@string/btnLableSubmit" />
+
+                    <Button
+                        android:id="@+id/btnEditLogout"
+                        style="@style/btnFacebookLoginStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layutMarginFirst"
+                        android:layout_weight="1"
+                        android:text="@string/btnLableCancle" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
